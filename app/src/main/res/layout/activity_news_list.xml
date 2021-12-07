@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:paddingTop="50dp">
+
+    <ImageView
+        android:id="@+id/titleTv"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/logo"/>
+
+    <ImageView
+        android:id="@+id/bookmarkCl"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_bookmark"
+        android:padding="5dp"
+        android:src="@drawable/ic_bookmark_outline" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/searchEt"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@+id/bookmarkCl"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_bookmark"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/ic_search"
+        android:drawableEnd="@drawable/ic_setting"
+        android:drawablePadding="5dp"
+        android:hint="Search"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/newsListRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchEt"
+        android:layout_marginTop="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/news_feed_item" />
+
+    <ProgressBar
+        android:id="@+id/loaderPB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:text="Date  not available"
+        android:textColor="#FF5722"
+        android:fontFamily="serif-monospace"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

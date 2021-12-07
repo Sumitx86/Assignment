@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Task</string>
+
+    <string name="read">Read</string>
+    <string name="save">Save</string>
+    <string name="sdate">29-03-21</string>
+    <string name="reporter_name">James Adam</string>
+    <string name="lorem_consequatur">Lorem consequatur</string>
+    <string name="saved">Saved</string>
+    <string name="today">Today</string>
+    <string name="see_all">See all...</string>
+    <string name="protest">#protest</string>
+    <string name="info">29-03-20 James Adam</string>
+
+</resources>
